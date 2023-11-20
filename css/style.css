@@ -1,0 +1,252 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.carousel-inner img {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100%;
+  height: 100%;
+}
+.welcome {
+  height: 150px;
+  background-color: rgb(158, 217, 219);
+  color: white;
+}
+.destination {
+  margin-bottom: 30px;
+}
+.destination .header {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: #5f9ea0;
+  border-radius: 6px;
+}
+
+.translations .header {
+  text-align: center;
+  color: white;
+  background-color: #5f9ea0;
+  border-radius: 6px;
+  padding: 8px;
+}
+.translations .item {
+  background-color: #9ed9db;
+}
+
+.translations .content {
+  font-size: 1.3rem;
+  color: white;
+}
+.translations .actions {
+  padding: 8px;
+}
+.translations .body {
+  padding: 20px;
+}
+.translations .body textarea {
+  padding: 8px;
+  border-width: 0px;
+  border-radius: 8px;
+}
+
+.cardover {
+  position: relative;
+}
+.cardover .btn {
+  position: absolute;
+  bottom: 55px;
+  right: 13px;
+}
+.cardover ::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #00dbde;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+.cardover:hover ::before {
+  width: 100%;
+  height: 100%;
+}
+
+.cardover ::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #00dbde;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.cardover:hover ::after {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  background: -webkit-linear-gradient(90deg, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.thankcard {
+  height: 450px;
+  background-image: url("../images/saly.jpeg");
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  position: relative;
+  border: none;
+  transition: 0.2s;
+}
+.card-img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(35, 79, 109, 0.3785889356) 0%,
+    #455f71 100%
+  );
+}
+.thankcard h4 .card-title a {
+  text-decoration: underline;
+}
+.thankcard .card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+}
+.thankcard .card-footer {
+  left: 16px;
+  bottom: 16px;
+  position: absolute;
+  color: white;
+}
+.card-has-bg:hover .thankcard {
+  background-size: 100%;
+  height: 350px;
+}
+.card-has-bg:hover .thankcard .card-body {
+  top: 20px;
+  left: 0;
+}
+
+.logoicon {
+  height: 80px;
+  width: 80px;
+  box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+  border-radius: 50%;
+  transition: 1s;
+}
+.aside-icon {
+  width: 80px;
+  height: 80px;
+}
+.aside-icon a .i {
+  text-align: center;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.postcard.light {
+  background-color: #e1e5ea;
+}
+
+.postcard {
+  height: 400px;
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+  box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+}
+.postcard .postcard__img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.postcard .postcard__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.postcard .small {
+  font-size: 80%;
+}
+
+.postcard img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.postcard .postcard__img_link {
+  display: contents;
+}
+.postcard.light {
+  background-color: #e1e5ea;
+}
+.postcard__preview-txt {
+  color: black;
+}
+.postcard .postcard__tagbox .tag__item {
+  display: inline-block;
+  background: rgba(83, 83, 83, 0.4);
+  border-radius: 3px;
+  padding: 2.5px 10px;
+  margin: 0 5px 5px 0;
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.5s;
+}
+.postcard ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 769px) {
+  .postcard .postcard__img {
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
+}
+@media screen and (min-width: 769px) {
+  .postcard .postcard__text {
+    padding: 3rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .postcard.light .postcard__text:before {
+    background: #e1e5ea;
+  }
+}
+@media screen and (min-width: 769px) {
+  .postcard:nth-child(2n + 1) .postcard__text::before {
+    left: -12px !important;
+    transform: rotate(4deg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+}
